@@ -1,0 +1,220 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!-- <head> -->
+	<!-- <title>webtech 1st pg</title> -->
+	<!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> -->
+	<!-- <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
+	<!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
+	<!-- <style> -->
+		<!-- body { background-color: rgb(2, 2, 36); } -->
+		<!-- #img1 { width: 12px; height: 20px; margin-left: 100px; } -->
+	<!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
+	<!-- <div id="img1"></div> -->
+	<!-- <div id="icon"></div> -->
+	<!-- <div id="home"></div> -->
+	<!-- <div id="abt"></div> -->
+	<!-- <div id "book"></div> -->
+	<!-- <div id="menu"></div> -->
+	<!-- <div id="restname"></div> -->
+	<!-- <div id="descr"></div> -->
+	<!-- <script type="text/babel"> -->
+		<!-- class Img1 extends React.Component { -->
+			<!-- render() { -->
+				<!-- return ( -->
+					<!-- <> -->
+						<!-- <img src={this.props.src} /> -->
+					<!-- </> -->
+				<!-- ) -->
+			<!-- } -->
+		<!-- } -->
+
+		<!-- class Headings4 extends React.Component { -->
+			<!-- render() { -->
+				<!-- return ( -->
+					<!-- <div> -->
+						<!-- <h4>{this.props.heading4}</h4> -->
+					<!-- </div> -->
+				<!-- ); -->
+			<!-- } -->
+		<!-- } -->
+
+		<!-- class Headings2 extends React.Component { -->
+			<!-- render() { -->
+				<!-- return ( -->
+					<!-- <div> -->
+						<!-- <h2>{this.props.heading2}</h2> -->
+					<!-- </div> -->
+				<!-- ); -->
+			<!-- } -->
+		<!-- } -->
+
+		<!-- class Everything extends React.Component { -->
+			<!-- render() { -->
+				<!-- return ( -->
+					<!-- <div> -->
+						<!-- <Img1 src={this.props.src} /> -->
+						<!-- <Headings4 heading4={this.props.heading4} /> -->
+						<!-- <Headings2 heading2={this.props.heading2} /> -->
+					<!-- </div> -->
+				<!-- ); -->
+			<!-- } -->
+		<!-- } -->
+
+		<!-- ReactDOM.render(<Everything src="C:/Users/kusum/OneDrive/Desktop/college things/sem3/webtech/proj/pg1img.webp" />, document.getElementById("img1")); -->
+		<!-- ReactDOM.render(<Everything src="C:/Users/kusum/OneDrive/Desktop/college things/sem3/webtech/proj/Estd2023-removebg-preview.png" />, document.getElementById("icon")); -->
+	<!-- </script> -->
+<!-- </body> -->
+<!-- </html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Saira Condensed' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+	<title>webtech 1st pg</title>
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<style>
+        #container {
+            position: relative;
+            text-align: center;
+        }
+        #home{
+            color: rgb(226, 214, 161);
+            font-family: 'Saira Condensed';
+            position:absolute;
+            top:8px;
+            left:900px
+        }
+        #abt{
+            color: rgb(226, 214, 161);
+            font-family: 'Saira Condensed';
+            position:absolute;
+            top:8px;
+            left:850px;
+            right:8px;
+        }
+        #book{
+            color: rgb(226, 214, 161);
+            font-family: 'Saira Condensed';
+            position:absolute;
+            top: 8px;
+            right:16px;
+        }
+        body{
+            background-color: rgb(2, 2, 36);
+        }
+		/* #img1 { width: 12px; height: 20px;  } */
+        #img1{
+box-shadow: inset -100px -10px 10px 20px black;
+ 
+        }
+        #rname{
+            color: rgb(212, 155, 9);
+            font-family: 'Saira Condensed';
+            font-size: 70px;
+            text-align: center;
+        }
+        #desc{
+            color: rgb(226, 214, 161);
+            font-family:Papyrus;
+            font-size:50px;
+
+        }
+        #menu{
+            color:rgb(196,122,2);
+            background-color: rgb(2,2,36);
+            text-align: center;
+            font-family: 'Saira Condensed';
+            font-size: 50px;
+        }
+	</style>
+</head>
+<body>
+    <div id="container">
+        <div id="img1"></div>
+        <div id="home"></div>
+	    <div id="abt"></div>
+	    <div id="book"></div>
+    </div>
+	<div id="icon"></div>
+	<div id="restname"></div>
+	<div id="descr"></div>
+    <div id="menu"></div>
+	<script type="text/babel">
+		class Img1 extends React.Component {
+			render() {
+				return (
+					<>
+                    <img width="600" height="800" src="C:/Users/kusum/OneDrive/Desktop/college things/sem3/webtech/proj/pg1img.webp" alt="image" align="right" top="4"></img>
+					</>
+				)
+			}
+		}
+        class Icon extends React.Component {
+			render() {
+				return (
+					<>
+						<img src="C:/Users/kusum/OneDrive/Desktop/college things/sem3/webtech/proj/Estd2023-removebg-preview.png" width="150" height="150"/>
+					</>
+				)
+			}
+		}
+
+		class Restoname extends React.Component {
+			render() {
+				return (
+					<div>
+						<h2 id="rname">GOOD KITCHEN</h2>
+					</div>
+				);
+			}
+		}
+        class Desc extends React.Component {
+			render() {
+				return (
+					<div>
+						<p id="desc">Experience the touch of authentic and original taste</p>
+					</div>
+				);
+			}
+		}
+        class Menu extends React.Component {
+			render() {
+				return (
+					<div>
+						<button id="menu">MENU</button>
+					</div>
+				);
+			}
+		}
+
+		class Headings2 extends React.Component {
+			render() {
+				return (
+					<div>
+						<h3>{this.props.text}</h3>
+					</div>
+				);
+			}
+		}
+
+
+		ReactDOM.render(<Img1/>, document.getElementById("img1"));
+        ReactDOM.render(<Icon/>, document.getElementById("icon"));
+        ReactDOM.render(<Restoname />, document.getElementById("restname"));
+        ReactDOM.render(<Desc />, document.getElementById("descr"));
+        ReactDOM.render(<Menu />, document.getElementById("menu"));
+        ReactDOM.render(<Headings2 text="Home" />, document.getElementById("home"));
+        ReactDOM.render(<Headings2 text="About Us" />, document.getElementById("abt"));
+        ReactDOM.render(<Headings2 text="Book Table" />, document.getElementById("book"));
+	</script>
+</body>
+</html>
+
+
+ 
